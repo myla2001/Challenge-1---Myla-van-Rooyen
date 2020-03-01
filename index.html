@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Challenge 1 - Myla van Rooyen</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+	<body onload="aantalBrandstof()" class="wrapper">
+		
+		<!-- Countdown "Aankomst op Mars" -->
+		<section class="box countdown">
+			<h1>Aankomst op Mars</h1>
+			<p id="countdown"></p>
+		</section>
+
+		<!-- Schakelaar "Zwaartekracht" -->
+		<section class="box zwaartekracht">
+			<h1>Zwaartekracht</h1>
+			<p>De zwaartekracht staat</p>
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+				<label class="onoffswitch-label" for="myonoffswitch">
+					<span class="onoffswitch-inner"></span>
+					<span class="onoffswitch-switch"></span>
+				</label>
+			</div>
+		</section>
+
+		<!-- Progressiebar "Brandstoftank" -->
+		<section class="box brandstof">
+			<h1>Brandstoftank</h1>
+			<div id="aantalBrandstof">
+  				<p id="percentage">78%</p>
+			</div>
+		</section>
+
+		<!-- Afteller aantal water en eten -->
+		<section class="box water">
+			<h1>Aantal water</h1>
+			<p class="aantalWater">1963</p><p>flessen water</p>
+		</section>
+		
+		<section class="box eten">
+			<h1>Aantal eten</h1>
+			<p class="aantalWater">1546</p><p>bakken eten</p>
+		</section>
+	</body>
+</html>
