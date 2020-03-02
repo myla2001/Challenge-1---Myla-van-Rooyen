@@ -3,7 +3,7 @@
 
 /*Algemeen*/
 body {
-    background-color: #A7A9AC;
+    background-color: #181C1F;
 }
 
 h1, p {
@@ -17,6 +17,7 @@ h1 {
 
 p {
     font-family: 'Lato', sans-serif;
+    color: #0F1112;
 }
 
 .wrapper {
@@ -33,7 +34,7 @@ p {
 }
 
 .aantalWater {
-    font-weight: 900;
+    font-weight: bold;
 }
 
 
