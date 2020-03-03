@@ -2,8 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 /*Algemeen*/
+
+figure {
+    margin: auto;
+}
+
 body {
-    background-color: #181C1F;
+    background-color: #eee;
 }
 
 h1, p {
@@ -15,7 +20,7 @@ h1 {
     color: #005288;
 }
 
-p {
+p, .ct-label {
     font-family: 'Lato', sans-serif;
     color: #0F1112;
 }
@@ -28,93 +33,6 @@ p {
 .box {
     background-color: #fff;
 }
-
-.zwaartekracht {
-    text-align: center;
-}
-
-.aantalWater {
-    font-weight: bold;
-}
-
-
-
-/*Toggle Switch - Zwaartekracht*/
-.onoffswitch {
-    position: relative;
-    width: 90px;
-    margin: auto;
-}
-
-.onoffswitch-checkbox {
-    display: none;
-}
-
-.onoffswitch-label {
-    display: block; 
-    overflow: hidden; 
-    border: 2px solid #A7A9AC; 
-    border-radius: 20px;
-}
-
-.onoffswitch-inner {
-    display: block; 
-    width: 200%; 
-    margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; 
-    float: left; 
-    width: 50%; 
-    height: 30px;  
-    line-height: 30px;
-    font-size: 14px;
-    color: white; 
-    font-family: Lato, sans-serif; 
-    font-weight: bold;
-    box-sizing: border-box;
-}
-
-.onoffswitch-inner:before {
-    content: "AAN";
-    background-color: #005288; 
-    color: #FFFFFF;
-    text-align: left;
-    padding-left: 15px;
-}
-
-.onoffswitch-inner:after {
-    content: "UIT";
-    background-color: #A7A9AC; 
-    color: #FFFFFF;
-    text-align: right;
-    padding-right: 15px;
-}
-
-.onoffswitch-switch {
-    display: block; 
-    width: 28px;
-    background: #FFFFFF;
-    position: absolute; 
-    top: 0; 
-    bottom: 0;
-    right: 57px;
-    border: 2px solid #A7A9AC; 
-    border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
-}
-
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
-}
-
-
 
 /*Progessiebar - Brandstof */
 #aantalBrandstof {
@@ -156,10 +74,10 @@ p {
     }
 
     .countdown {
-        margin-top: 25px;
+        margin-top: 10px;
     }
 
-    .countdown, .zwaartekracht, .brandstof, .water, .eten {
+    .countdown, .brandstof, .snelheid {
         grid-column: 2 / span 10;
     }
 }
@@ -188,16 +106,9 @@ p {
     }
 
     .countdown {
-        margin-top: 90px;
+        margin-top: 30px;
     }
 
-    .water {
-        grid-column: 2 / span 5;
-    }
-
-    .eten {
-        grid-column: 7 / span 5;
-    }
 }
 
 
@@ -208,26 +119,28 @@ p {
 
 @media (min-width: 1024px) {
     .box {
-        padding: 30px;
         border-radius: 15px;
     }
 
-    .countdown, .zwaartekracht {
-        margin-top: 15px;
+    .countdown, .snelheid {
+        margin-top: 80px;
     }
 
-    .countdown, .water {
+    .countdown {
         grid-column: 2 / span 5;
     }
 
-    .zwaartekracht, .eten {
+    .snelheid {
         grid-column: 7 / span 5;
     }
 
     .brandstof {
         grid-column: 2 / span 10;
     }
-}
+
+    #countdown {
+        font-size: 60px;
+    }
 
 
 
@@ -248,7 +161,11 @@ p {
         font-size: 25px;
     }
 
-    .countdown, .zwaartekracht {
-        margin-top: 125px;
+    .countdown, .snelheid {
+        margin-top: 75px;
+    }
+
+    #countdown {
+        margin: 25%;
     }
 }
