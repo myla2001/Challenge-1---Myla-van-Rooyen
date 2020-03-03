@@ -3,10 +3,6 @@
 
 /*Algemeen*/
 
-figure {
-    margin: auto; 
-}
-
 body {
     background-color: #181C1F;
 }
@@ -24,6 +20,11 @@ p, .ct-label {
     font-family: 'Lato', sans-serif;
     color: #0F1112;
 }
+
+figure {
+    margin: auto; 
+}
+
 
 .wrapper {
     display: grid;
