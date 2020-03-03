@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 /*Algemeen*/
 
@@ -25,7 +25,6 @@ figure {
     margin: auto; 
 }
 
-
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -33,6 +32,10 @@ figure {
 
 .box {
     background-color: #fff;
+}
+
+.aantalWater {
+    font-weight: bold;
 }
 
 /*Progessiebar - Brandstof */
@@ -58,15 +61,15 @@ figure {
 
 @media (min-width: 320px) {
     .wrapper {
-        grid-gap: 25px;
+        grid-gap: 15px;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .box {
@@ -75,10 +78,14 @@ figure {
     }
 
     .countdown {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
-    .countdown, .brandstof, .snelheid {
+    .brandstof {
+    	margin-bottom: 15px;
+    }
+
+    .countdown, .brandstof, .snelheid, .water {
         grid-column: 2 / span 10;
     }
 }
@@ -110,6 +117,21 @@ figure {
         margin-top: 30px;
     }
 
+    .snelheid {
+        grid-column: 2 / span 6;
+    }
+
+    .water {
+        grid-column: 8 / span 4;
+    }
+
+    .aantalWater {
+        margin-top: 50%;
+    }
+
+  	.brandstof {
+ 		margin-bottom: 30px;
+    }
 }
 
 
@@ -124,7 +146,7 @@ figure {
     }
 
     .countdown, .snelheid {
-        margin-top: 80px;
+        margin-top: 30px;
     }
 
     .countdown {
@@ -135,13 +157,27 @@ figure {
         grid-column: 7 / span 5;
     }
 
+    .water {
+        grid-column: 2 / span 3;
+    }
+
     .brandstof {
-        grid-column: 2 / span 10;
+        grid-column: 5 / span 7;
     }
 
     #countdown {
-        font-size: 60px;
+        font-size: 40px;
+        margin-top: 30%;
     }
+
+   .aantalWater {
+        margin-top: 0%;
+    }
+
+    .water, .brandstof {
+    	margin-bottom: 30px;
+    }
+}
 
 
 
@@ -163,10 +199,10 @@ figure {
     }
 
     .countdown, .snelheid {
-        margin-top: 75px;
+        margin-top: 50px;
     }
 
-    #countdown {
-        margin: 25%;
+    .water, .brandstof {
+    	margin-bottom: 50px;
     }
 }
